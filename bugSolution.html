@@ -1,0 +1,5 @@
+The solution involves carefully checking your Tailwind CSS configuration file (`tailwind.config.js` or `tailwind.config.cjs`) and ensuring that all classes used in `@apply` directives are correctly defined.  Using your IDE's auto-completion features can help prevent these issues.  Another good practice is to employ linters, such as `stylelint` with the appropriate Tailwind CSS plugin, to catch such errors during development. 
+
+For example, to fix the previous bug you must make sure `bg-red-500` and `text-white` are included in your `tailwind.config.js` file's `content` array. Or if they are custom classes, add them to your custom classes definitions.
+
+If you are unsure which classes are available in your setup you can use Tailwind's PurgeCSS feature or check the generated CSS file to see the complete list of classes.
