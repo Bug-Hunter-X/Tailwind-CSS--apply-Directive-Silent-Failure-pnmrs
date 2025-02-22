@@ -1,0 +1,8 @@
+This error occurs when using Tailwind CSS's `@apply` directive with a class that doesn't exist or is misspelled.  For example:
+
+```html
+<div class="@apply bg-red-500 text-white">
+</div>
+```
+
+If `bg-red-500` or `text-white` are not defined in your Tailwind CSS configuration, this will lead to no styling being applied, and no error message in your browser's console.  The stylesheet will compile, but the missing classes will silently fail. 
