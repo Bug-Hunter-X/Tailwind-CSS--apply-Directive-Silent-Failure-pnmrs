@@ -1,0 +1,3 @@
+# Tailwind CSS @apply Directive Silent Failure
+
+This repository demonstrates a common but hard-to-debug issue in Tailwind CSS: the silent failure of the `@apply` directive when used with undefined or misspelled classes. The `@apply` directive applies pre-defined Tailwind CSS utility classes to an element. However, if a class is misspelled or not included in your Tailwind CSS configuration, the directive will not report any errors and will simply not apply any styling. This can lead to frustrating debugging sessions where you cannot identify the source of missing styles. This repo provides a minimal example illustrating this problem and its solution.
